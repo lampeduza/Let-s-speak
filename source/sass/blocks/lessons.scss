@@ -154,6 +154,11 @@
 		top: 0;
 		left: 0;
 	}
+
+	&:focus,
+	&:active {
+		outline: 4px solid #f1f3fe;
+	}
 }
 
 .lessons__head {

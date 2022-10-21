@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Let's Speak 'Language school'">
     <title>Let's Speak | Main Page</title>
     <link rel="preload" href="fonts/roboto300.woff2" as="font" type="font/woff2" crossorigin>
@@ -15,7 +15,7 @@
 
     <!-- header -->
     <header class="header">
-      <form class="search" action="" method="get">
+      <form class="search" action="url" method="get">
         <button class="search__button" type="button">
           <svg width="21" height="21" role="img" aria-label="Search icon">
             <use xlink:href="img/sprite.svg#search"></use>
@@ -56,7 +56,7 @@
     <!-- navigation -->
     <nav class="navigation">
       <h1 class="visually-hidden">Let's Speak. Языковая школа</h1>
-      <a class="navigation__logo" href="#" aria-labelledby="">
+      <a class="navigation__logo" href="#">
         <picture class="navigation__picture">
           <!-- source -->
           <img class="navigation__image" src="img/logo.png" width="162" height="36" alt="Let's Speak logo">
@@ -209,7 +209,7 @@
       <article class="course">
         <h2 class="visually-hidden">Бесплатный видеокурс по английскому языку</h2>
         <!-- video area -->
-        <section class="course__video-area">
+        <div class="course__video-area">
           <a class="course__video-link" href="#">
             <figure class="course__figure">
               <picture>
@@ -223,12 +223,12 @@
             </figure>
           </a>
 
-          <button class="course__play play play--large" type="button" aria-label="Run video">
+          <span class="course__play play play--large">
             <svg width="20" height="24" role="img" aria-label="Play icon">
               <use xlink:href="img/sprite.svg#play"></use>
             </svg>
-          </button>
-        </section> <!-- end video area -->
+          </span>
+        </div> <!-- end video area -->
 
         <!-- lessons -->
         <section class="lessons">
@@ -239,55 +239,55 @@
               <a class="lessons__link" href="#">
                 <h3 class="lessons__head">Урок 8</h3>
                 <p class="lessons__description">Времена глаголов</p>
-                <button class="lessons__play play play--small" type="button" aria-label="Run video">
+                <span class="lessons__play play play--small">
                   <svg width="10" height="12" role="img" aria-label="Play icon small">
                     <use xlink:href="img/sprite.svg#play-small"></use>
                   </svg>
-                </button>
+                </span>
               </a>
             </li>
             <li class="lessons__item lessons__item--current">
               <a class="lessons__link" href="#">
                 <h3 class="lessons__head">Урок 9</h3>
                 <p class="lessons__description">Неправильные глаголы</p>
-                <button class="lessons__play play play--small" type="button" aria-label="Run video">
+                <span class="lessons__play play play--small">
                   <svg width="10" height="12" role="img" aria-label="Play icon small">
                     <use xlink:href="img/sprite.svg#play-small"></use>
                   </svg>
-                </button>
+                </span>
               </a>
             </li>
             <li class="lessons__item lessons__item--disabled">
               <a class="lessons__link" href="#">
                 <h3 class="lessons__head">Урок 10</h3>
                 <p class="lessons__description">Present Simple</p>
-                <button class="lessons__play play play--small" type="button" aria-label="Run video">
+                <span class="lessons__play play play--small">
                   <svg width="10" height="12" role="img" aria-label="Play icon small">
                     <use xlink:href="img/sprite.svg#play-small"></use>
                   </svg>
-                </button>
+                </span>
               </a>
             </li>
             <li class="lessons__item lessons__item--disabled">
               <a class="lessons__link" href="#">
                 <h3 class="lessons__head">Урок 11</h3>
                 <p class="lessons__description">Past Simple</p>
-                <button class="lessons__play play play--small" type="button" aria-label="Run video">
+                <span class="lessons__play play play--small">
                   <svg width="10" height="12" role="img" aria-label="Play icon small">
                     <use xlink:href="img/sprite.svg#play-small"></use>
                   </svg>
-                </button>
+                </span>
               </a>
             </li>
             <li class="lessons__item lessons__item--disabled">
               <a class="lessons__link" href="#">
                 <h3 class="lessons__head">Урок 12</h3>
                 <p class="lessons__description">Present Continuous</p>
-                <button class="lessons__play play play--small" type="button" aria-label="Run video">
+                <span class="lessons__play play play--small">
                   <svg width="10" height="12" role="img" aria-label="Play icon small">
                     <use xlink:href="img/sprite.svg#play-small"></use>
                   </svg>
-                </button>
+                </span>
               </a>
             </li>
           </ul>

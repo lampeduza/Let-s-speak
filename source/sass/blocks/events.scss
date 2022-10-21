@@ -52,4 +52,14 @@
 	line-height: 20px;
 	justify-self: end;
 	align-self: end;
+	outline: none;
+
+	&:hover {
+		color: #7a8bdc;
+	}
+
+	&:focus,
+	&:active {
+		color: #9eacee;
+	}
 }
