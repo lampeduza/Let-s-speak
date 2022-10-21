@@ -695,7 +695,12 @@ img {
   background-color: #ffffff;
   border-radius: 4px;
   height: 100%;
+  max-height: 300px;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto, 1fr;
+  grid-template-rows: auto, 1fr;
 }
 
 .lessons::after {
@@ -715,10 +720,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  height: 255px;
   overflow-y: auto;
 }
 
@@ -874,7 +875,125 @@ img {
 }
 
 .lectures {
-  display: none;
+  grid-column: -1 / -2;
+  grid-row: 1 / -1;
+  background-color: #ffffff;
+  max-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.lectures__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  padding: 20px 30px 10px 30px;
+  position: relative;
+}
+
+.lectures__title::before {
+  content: '';
+  width: calc(100% - 30px);
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #E4E8FC;
+}
+
+.lectures__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #ffffff;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+  align-content: start;
+  gap: 16px 0;
+  padding: 20px 0;
+  overflow-y: auto;
+}
+
+.lectures__list::-webkit-scrollbar {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.lectures__list::-webkit-scrollbar-thumb {
+  background: #E4E8FC;
+}
+
+.lectures__item {
+  position: relative;
+}
+
+.lectures__item--indicator-online::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #0BC4CF;
+  border-radius: 50%;
+  outline: 2px solid #ffffff;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.lectures__link {
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 12px;
+  padding: 0 30px;
+}
+
+.lectures__head {
+  color: #3C425F;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  grid-column: 2 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.lectures__level {
+  color: #3C425F;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  opacity: 0.5;
+}
+
+.lectures__picture {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.lectures__image {
+  border-radius: 50%;
 }
 
 .footer {
