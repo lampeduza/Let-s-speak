@@ -19,7 +19,7 @@
 </symbol><symbol id="next" viewBox="0 0 12 20">
 <path d="M1 1L10 10L1 19" stroke="#B4BEF0" stroke-width="2" fill="transparent"/>
 </symbol><symbol id="play-small" viewBox="0 0 10 12">
-<path d="M10 6L0 12L-5.24537e-07 0L10 6Z" fill="white"/>
+<path d="M10 6L0 12L-5.24537e-07 0L10 6Z"/>
 </symbol><symbol id="play" viewBox="0 0 20 24">
 <path d="M20 12L0 24L-1.04907e-06 0L20 12Z" fill="white"/>
 </symbol><symbol id="previous" viewBox="0 0 12 20">

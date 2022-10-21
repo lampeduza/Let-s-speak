@@ -1,0 +1,16 @@
+.play {
+	border: none;
+	border-radius: 4px;
+
+	&--large {
+		cursor: pointer;
+		background-color: #576BCC;
+		padding: 20px 20px 20px 24px;
+	}
+
+	&--small {
+		cursor: inherit;
+		padding: 10px 10px 10px 12px;
+		background-color: #F1F3FE;
+	}
+}

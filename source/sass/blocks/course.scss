@@ -1,3 +1,32 @@
 .course {
-	display: none;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 260px);
+	align-items: start;
+	grid-column: 1 / span 3;
+	grid-row: -1 / -2;
+}
+
+.course__video-area {
+	grid-column: 1 / 3;
+	position: relative;
+}
+
+.course__video-link {
+	display: block;
+}
+
+.course__figure {
+	margin: 0;
+}
+
+.course__video-image {
+	object-fit: cover;
+}
+
+.course__play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

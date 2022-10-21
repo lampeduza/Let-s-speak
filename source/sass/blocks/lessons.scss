@@ -1,0 +1,182 @@
+.lessons {
+	grid-column: -1 / -2;
+	grid-row: 1 / -1;
+	color: #3C425F;
+	background-color: #ffffff;
+	border-radius: 4px;
+	height: 100%;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: calc(100% - 1px);
+		height: 40px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50.52%);
+		border-radius: 0px 0px 4px 4px;
+	}
+}
+
+.lessons__list {
+	@include reset-list;
+	grid-column: 3 / 4;
+	height: 255px;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+  	width: 1px;
+  	background-color: rgba(255, 255, 255, 0.9);
+	}
+
+	&::-webkit-scrollbar-thumb {
+  	background: #E4E8FC;
+	}
+}
+
+.lessons__item {
+
+	&--disabled {
+		.lessons__link {
+			opacity: 0.3;
+
+			&:hover {
+				cursor: unset;
+				background-color: transparent;
+
+				.lessons__play {
+					background-color: #F1F3FE;
+				}
+			}
+
+			&:hover::before {
+				content: none;
+			}
+		}
+	}
+
+	&--watched {
+		.lessons__link {
+
+			&:hover {
+				.lessons__play {
+					svg {
+						fill: #ffffff;
+					}
+				}
+			}
+		}
+
+		.lessons__play {
+			svg {
+				fill: #576BCC;
+			}
+		}
+	}
+
+	&--current {
+		.lessons__play {
+			background-color: #576BCC;
+		}
+
+		.lessons__link {
+			background-color: #F1F3FE;
+
+			&:hover {
+				cursor: auto;
+			}
+
+			&::before {
+				content: '';
+				width: 6px;
+				height: 100%;
+				background-color: #576BCC;
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+.lessons__title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 0;
+	padding:20px 30px 10px;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 230px;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: #E4E8FC;
+	}
+}
+
+.lessons__link {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: repeat(2, auto);
+	gap: 0 12px;
+	position: relative;
+
+	color: inherit;
+	text-decoration: none;
+	padding: 8px 30px;
+	background-color: #ffffff;
+	cursor: pointer;
+	user-select: none;
+
+	&:hover {
+		background-color: #F1F3FE;
+
+		.lessons__play {
+			background-color: #576BCC;
+		}
+	}
+
+	&:hover::before {
+		content: '';
+		width: 6px;
+		height: 100%;
+		background-color: #576BCC;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.lessons__head {
+	margin: 0;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.lessons__description {
+	margin: 0;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.lessons__play {
+	grid-column: 1 / 2;
+	grid-row: 1 / -1;
+	justify-self: center;
+	align-self: center;
+
+	svg {
+		fill: #ffffff;
+	}
+}
