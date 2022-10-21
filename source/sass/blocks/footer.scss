@@ -1,0 +1,39 @@
+.footer {
+	grid-column: 1 / -1;
+	grid-row: -1 / -2;
+	background-color: #3C425F;
+	padding: 20px 30px;
+}
+
+.footer__list {
+	height: 100%;
+	@include reset-list;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 100%;
+	grid-template-areas:
+	'copyright slogan';
+	gap: 20px;
+}
+
+.footer__element {
+	color: rgba(255, 255, 255, 0.5);
+
+	&--copyright {
+		grid-area: copyright;
+	}
+
+	&--slogan {
+		grid-area: slogan;
+	}
+}
+
+.footer__description-list {
+	margin: 0;
+	display: flex;
+}
+
+.footer__description-definition {
+	margin: 0;
+}

@@ -1,0 +1,52 @@
+.events {
+	grid-column: 1 / -2;
+	grid-row: 2 / 3;
+}
+
+.events__list {
+	@include reset-list;
+	display: grid;
+	grid-template-columns: repeat(3, 260px);
+	grid-template-rows: min-content;
+	gap: 20px;
+}
+
+.events__item {
+	display: grid;
+	gap: 4px;
+	padding: 20px 30px;
+}
+
+.events__title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #3C425F
+}
+
+.events__text {
+	color: #3C425F;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+}
+
+.events__duration {
+	color: #0BC4CF;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.events__link {
+	color: #576BCC;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	justify-self: end;
+	align-self: end;
+}

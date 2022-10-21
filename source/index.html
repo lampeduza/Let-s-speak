@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Let's Speak 'Language school'">
+    <title>Let's Speak | Main Page</title>
+    <link rel="preload" href="fonts/roboto300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="header">
+      <form class="search" action="" method="get">
+        <button class="search__button" type="button" aria-label="Search">
+          <svg width="21" height="21">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+
+        <input class="search__field" type="text" name="search-field" id="search-field" placeholder="Поиск...">
+      </form>
+
+      <div class="user-panel">
+        <div class="user-panel__container">
+          <div class="user-panel__content" tabindex="0">
+            <picture class="user-panel__picture">
+              <!-- source -->
+              <img class="user-panel__image" src="img/profile-photo.jpg" width="40" height="40" alt="User's avatar">
+            </picture>
+            <span class="user-panel__name">Опознанный Енот</span>
+            <span class="user-panel__icon">
+              <svg width="12" height="6">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification">
+        <button class="notification__show" type="button" aria-label="Show notifications' window">
+          <svg width="18" height="20">
+            <use xlink:href="img/sprite.svg#bell"></use>
+          </svg>
+
+          <span class="notification__counter">1</span>
+        </button>
+      </div>
+    </header> <!-- end header -->
+
+    <!-- navigation -->
+    <nav class="navigation">
+      <h1 class="visually-hidden">Let's Speak. Языковая школа</h1>
+      <a class="navigation__logo" href="#" aria-labelledby="">
+        <picture class="navigation__picture">
+          <img class="navigation__image" src="img/logo.png" width="162" height="36" alt="Let's Speak logo">
+        </picture>
+      </a>
+
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--current">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#cabinet"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Кабинет ученика</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#class"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Учебный класс</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#manual"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Методичка</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#homework"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Домашняя работа</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#exam"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Экзамены</span>
+          </a>
+        </li>
+        <li class="navigation__item navigation__item--settings">
+          <a class="navigation__link" href="#">
+            <span class="navigation__icon">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#settings"></use>
+              </svg>
+            </span>
+            <span class="navigation__text">Настройки</span>
+          </a>
+        </li>
+      </ul>
+    </nav> <!-- end navigation -->
+
+    <!-- main -->
+    <main class="main">
+
+      <!-- slider -->
+      <article class="main__slider slider">
+        <h2 class="visually-hidden">Main slider</h2>
+        <ul class="slider__list">
+          <li class="slider__item slider__item--current">
+            <h3 class="slider__title">«Бифитер»...</h3>
+            <p class="slider__description">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+            <a class="slider__button" href="#">Пройти тест ➞</a>
+            <picture class="slider__picture">
+              <img class="slider__image" src="img/wallpaper.png" width="820" height="300" alt="Image description">
+            </picture>
+          </li>
+          <li class="slider__item">
+            <h3 class="slider__title">««Кокни»...</h3>
+            <p class="slider__description">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+            <a class="slider__button" href="#">Пройти тест ➞</a>
+            <picture class="slider__picture">
+              <img class="slider__image" src="img/wallpaper.png" width="820" height="300" alt="Image description">
+            </picture>
+          </li>
+          <li class="slider__item">
+            <h3 class="slider__title">«Даблдекер»...</h3>
+            <p class="slider__description">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+            <a class="slider__button" href="#">Пройти тест ➞</a>
+            <picture class="slider__picture">
+              <img class="slider__image" src="img/wallpaper.png" width="820" height="300" alt="Image description">
+            </picture>
+          </li>
+        </ul>
+
+        <ul class="slider__controls">
+          <li class="slider__control slider__control--previous">
+            <button class="slider__navigate" type="button" aria-label="Previous slide">
+              <svg width="12" height="20">
+                <use xlink:href="img/sprite.svg#previous"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="slider__control slider__control--next">
+            <button class="slider__navigate" type="button" aria-label="Next slide">
+              <svg width="12" height="20">
+                <use xlink:href="img/sprite.svg#next"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </article> <!-- end slider -->
+
+      <!-- events -->
+      <article class="events">
+        <h2 class="visually-hidden">Ближайшие события</h2>
+        <ul class="events__list">
+          <li class="events__item">
+            <h3 class="events__title">Английский завтрак</h3>
+            <p class="events__text">Разговорный клуб</p>
+            <p class="events__duration">10:00 — 11:00 (ПН—ПТ)</p>
+            <a class="events__link" href="#">Записаться ➞</a>
+          </li>
+          <li class="events__item">
+            <h3 class="events__title">Лето в Лондоне</h3>
+            <p class="events__text">Месяц экскурсий и практики</p>
+            <p class="events__duration">10 июня — 3 июля</p>
+            <a class="events__link" href="#">Отправиться ➞</a>
+          </li>
+          <li class="events__item">
+            <h3 class="events__title">Надоел английский?</h3>
+            <p class="events__text">С нами можно выучить и&nbsp;другие языки</p>
+            <a class="events__link" href="#">Открыть список ➞</a>
+          </li>
+        </ul>
+      </article> <!-- end events -->
+
+      <!-- course -->
+      <article class="course">
+        <h2 class="visually-hidden">Бесплатный видеокурс по английскому языку</h2>
+        <!-- video area -->
+        <section class="course__video-area">
+          <a class="course__video-link" href="#">
+            <figure class="course__figure">
+              <picture>
+                <!-- source -->
+                <img class="course__video-image" src="img/teachers.jpg" width="540" height="300" alt="Teachers are talking">
+              </picture>
+              <figcaption class="visually-hidden">
+                <span class="course__head">Урок 9</span>
+                <span class="course__description">Неправильные глаголы</span>
+              </figcaption>
+            </figure>
+          </a>
+
+          <button class="play play--large" type="button">
+            <svg width="20" height="24" role="img" aria-label="Play icon">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </section> <!-- end video area -->
+
+        <!-- lessons -->
+        <section class="course__lessons lessons">
+          <h2 class="lesson__title">Курс English A1</h2>
+
+          <ul class="lessons__list">
+            <li class="lessons__item">
+              <a class="lessons__link" href="#">
+                <h3 class="lesson__head">Урок 8</h3>
+                <p class="lesson__description">Времена глаголов</p>
+                <button class="play play--small" type="button">
+                  <svg width="10" height="12" role="img" aria-label="Play icon">
+                    <use xlink:href="img/sprite.svg#play-small"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="lessons__item lessons__item--current">
+              <a class="lessons__link" href="#">
+                <h3 class="lesson__head">Урок 9</h3>
+                <p class="lesson__description">Неправильные глаголы</p>
+                <button class="play play--small" type="button">
+                  <svg width="10" height="12" role="img" aria-label="Play icon">
+                    <use xlink:href="img/sprite.svg#play-small"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="lessons__item">
+              <a class="lessons__link" href="#">
+                <h3 class="lesson__head">Урок 10</h3>
+                <p class="lesson__description">Present Simple</p>
+                <button class="play play--small" type="button">
+                  <svg width="10" height="12" role="img" aria-label="Play icon">
+                    <use xlink:href="img/sprite.svg#play-small"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="lessons__item">
+              <a class="lessons__link" href="#">
+                <h3 class="lesson__head">Урок 11</h3>
+                <p class="lesson__description">Past Simple</p>
+                <button class="play play--small" type="button">
+                  <svg width="10" height="12" role="img" aria-label="Play icon">
+                    <use xlink:href="img/sprite.svg#play-small"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li class="lessons__item">
+              <a class="lessons__link" href="#">
+                <h3 class="lesson__head">Урок 12</h3>
+                <p class="lesson__description">Present Continuous</p>
+                <button class="play play--small" type="button">
+                  <svg width="10" height="12" role="img" aria-label="Play icon">
+                    <use xlink:href="img/sprite.svg#play-small"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article> <!-- end course -->
+
+      <article class="lectures">
+        <h2 class="lectures__title">Контакты</h2>
+
+        <ul class="lectures__list">
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь</h3>
+              <p class="lectures__level">English A1</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 2</h3>
+              <p class="lectures__level">Español 2</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 3</h3>
+              <p class="lectures__level">日本語</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 4</h3>
+              <p class="lectures__level">English B2</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 5</h3>
+              <p class="lectures__level">Le Français</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 6</h3>
+              <p class="lectures__level">Español 1</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+          <li class="lectures__item">
+            <a class="lectures__link" href="#">
+              <h3 class="lectures__head">Неопознанный Пользователь 7</h3>
+              <p class="lectures__level">Italiano</p>
+              <picture class="lectures__picture">
+                <img class="lectures__image" src="img/profile-photo-secondary.jpg" width="40" height="40" alt="Lecture's avatar">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__element footer__element--copyright">© 2020</li>
+        <li class="footer__element footer__element--slogan">
+          <dl class="footer__description-list">
+            <dt class="footer__description-term">Let’s Speak,&nbsp;</dt>
+            <dd class="footer__description-definition">языковая школа</dd>
+          </dl>
+        </li>
+      </ul>
+    </footer> <!-- end footer -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

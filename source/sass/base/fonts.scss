@@ -1,0 +1,29 @@
+/* Roboto light (normal) */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/roboto300.woff2") format("woff2"),
+    url("../fonts/roboto300.woff") format("woff");
+}
+
+/* Roboto medium (normal) */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/roboto500.woff2") format("woff2"),
+    url("../fonts/roboto500.woff") format("woff");
+}
+
+/* Roboto heavy (normal) */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/roboto900.woff2") format("woff2"),
+    url("../fonts/roboto900.woff") format("woff");
+}

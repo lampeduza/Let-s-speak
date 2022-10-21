@@ -1,0 +1,19 @@
+.user-panel {
+	display: flex;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.user-panel__content {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.user-panel__picture {
+	margin-right: 12px;
+}
+
+.user-panel__name {
+	margin-right: 20px;
+}

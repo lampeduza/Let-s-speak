@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 1440px;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 280px 1160px;
+  grid-template-rows: 80px 840px min-content;
+  gap: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
