@@ -92,6 +92,24 @@
 	&:hover {
 		background-color: #f1f3fe;
 	}
+
+	&:focus,
+	&:active {
+		background-color: #f1f3fe;
+		outline: 3px solid #f1f3fe;
+
+		&::before {
+			content: '';
+			width: 6px;
+			height: 100%;
+			background-color: #576BCC;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+	}
 }
 
 .navigation__icon {

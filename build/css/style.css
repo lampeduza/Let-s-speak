@@ -362,6 +362,25 @@ img {
   background-color: #f1f3fe;
 }
 
+.navigation__link:focus,
+.navigation__link:active {
+  background-color: #f1f3fe;
+  outline: 3px solid #f1f3fe;
+}
+
+.navigation__link:focus::before,
+.navigation__link:active::before {
+  content: '';
+  width: 6px;
+  height: 100%;
+  background-color: #576BCC;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .navigation__icon {
   margin-right: 13px;
 }
@@ -581,6 +600,7 @@ img {
 }
 
 .events__link {
+  text-decoration: none;
   color: #576BCC;
   font-weight: 500;
   font-size: 16px;
