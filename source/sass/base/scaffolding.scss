@@ -9,15 +9,15 @@ html {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 300;
   margin: 0 auto;
   min-height: 100vh;
   min-width: 1440px;
   max-width: 1440px;
   display: grid;
-  grid-template-columns: 280px 1160px;
-  grid-template-rows: 80px 840px min-content;
+  grid-template-columns: 280px auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 img {
