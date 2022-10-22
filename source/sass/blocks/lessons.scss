@@ -1,5 +1,5 @@
 .lessons {
-	grid-column: -1 / -2;
+	grid-column: 2 / 3;
 	grid-row: 1 / -1;
 	color: #3C425F;
 	background-color: #ffffff;
@@ -9,7 +9,7 @@
 	position: relative;
 
 	display: grid;
-	grid-template-rows: auto, 1fr;
+	grid-template-rows: auto 1fr;
 
 	&::after {
 		content: '';
